@@ -1,0 +1,20 @@
+import React from 'react';
+import chair from '../../assets/images/chair.png'
+import './Banner.css'
+const Banner = () => {
+    return (
+        <div class="hero min-h-screen">
+            <div class="hero-content flex-col lg:flex-row-reverse">
+               
+          <img src={chair} class="max-w-sm rounded-lg shadow-2xl" />
+          <div>
+            <h1 class="text-5xl font-bold">Your New Smail Starts <br /> Here</h1>
+            <p class="py-6">Lorem Ipsum is simply dummy text of the printing and typesetting  industry. Lorem <br /> Ipsum has been the industry's standard dummy text ever since the</p>
+            <button class="btn btn-primary text-white font-bold bg-gradient-to-r from-cyan-500 to-blue-500">Get Started</button>
+          </div>
+        </div>
+      </div>
+    );
+};
+
+export default Banner;
