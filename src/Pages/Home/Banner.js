@@ -1,6 +1,5 @@
 import React from 'react';
 import chair from '../../assets/images/chair.png'
-import './Banner.css'
 const Banner = () => {
     return (
         <div class="hero min-h-screen">
