@@ -22,9 +22,9 @@ const Service = ({ service, setTreatment }) => {
                          disabled={slots.length === 0}
                         onClick={()=>setTreatment (service)}
                         class="btn btn-secondary text-white uppercase">Book Appoinment</label>
-    </div>
-  </div>
-</div>
+                </div>
+            </div>
+        </div>
     );
 };
 
