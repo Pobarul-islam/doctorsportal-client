@@ -11,7 +11,7 @@ const firebaseConfig = {
   projectId: "doctors-portal-22dc7",
   storageBucket: "doctors-portal-22dc7.appspot.com",
   messagingSenderId: "628928288157",
-  appId: "1:628928288157:web:929a7f4c0c7456156f0b74"
+  appId: "1:628928288157:web:929a7f4c0c7456156f0b74",
 };
 
 // Initialize Firebase
