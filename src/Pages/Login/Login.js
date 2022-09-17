@@ -5,12 +5,11 @@ import {
 } from "react-firebase-hooks/auth";
 import auth from "../../firebase.init";
 import { useForm } from "react-hook-form";
-import { Link, useNavigate, useLocation } from "react-router-dom";
 import Loading from "../Shared/Loading";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 
 const Login = () => {
   const [signInWithGoogle, gUser, gLoading, gError] = useSignInWithGoogle(auth);
-
   const {
     register,
     formState: { errors },
@@ -27,12 +26,11 @@ const Login = () => {
   useEffect(() => {
     if (user || gUser) {
       navigate(from, { replace: true });
-      console.log(gUser)
     }
   }, [user, gUser, from, navigate]);
 
-  if ( loading || gLoading) {
-    return <Loading></Loading>
+  if (loading || gLoading) {
+    return <Loading></Loading>;
   }
 
   if (error || gError) {
