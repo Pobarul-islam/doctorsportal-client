@@ -2,8 +2,6 @@ import React from "react";
 import { DayPicker } from "react-day-picker";
 import chair from "../../assets/images/chair.png";
 import "react-day-picker/dist/style.css";
-import { useState } from "react";
-import { format } from "date-fns";
 const AppoinmentBanner = ({ date, setDate }) => {
   return (
     <div className="hero min-h-screen">

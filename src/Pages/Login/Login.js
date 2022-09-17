@@ -29,6 +29,8 @@ const Login = () => {
     }
   }, [user, gUser, from, navigate]);
 
+  console.log(user)
+
   if (loading || gLoading) {
     return <Loading></Loading>;
   }
