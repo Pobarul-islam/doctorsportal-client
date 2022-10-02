@@ -31,7 +31,7 @@ const BookingModal = ({ date, treatment, setTreatment }) => {
       headers: {
         'content-type': 'application/json'
       },
-      body:JSON.stringify(booking)
+      body: JSON.stringify(booking)
     })
       .then(res => res.json())
       .then(data => {
@@ -46,7 +46,7 @@ const BookingModal = ({ date, treatment, setTreatment }) => {
         }
         // to close the modal
         setTreatment(null);
-      })
+      });
    
   };
 
