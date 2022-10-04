@@ -2,7 +2,7 @@ import React from "react";
 import { DayPicker } from "react-day-picker";
 import chair from "../../assets/images/chair.png";
 import "react-day-picker/dist/style.css";
-const AppoinmentBanner = ({ date, setDate }) => {
+const AppointmentBanner = ({ date, setDate }) => {
   return (
     <div className="hero min-h-screen">
       <div className="hero-content flex-col lg:flex-row-reverse">
@@ -19,4 +19,4 @@ const AppoinmentBanner = ({ date, setDate }) => {
   );
 };
 
-export default AppoinmentBanner;
+export default AppointmentBanner;
