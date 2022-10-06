@@ -41,9 +41,9 @@ const SignUp = () => {
     );
   }
 
-  if (user || gUser) {
-    // navigate("/appointment");
-    console.log(user || gUser);
+  if (token) {
+    navigate("/appointment");
+    
   }
 
   const onSubmit = async (data) => {
