@@ -1,6 +1,7 @@
 import React from "react";
 import { useQuery } from "react-query";
 import Loading from "../Shared/Loading";
+import UserRow from "./UserRow";
 
 
 
@@ -34,7 +35,16 @@ const Users = () => {
               <th>Favorite Color</th>
             </tr>
           </thead>
-          
+                  <tbody>
+                      {
+                          users.map(user => <UserRow
+                              key={user._id}
+                              user={user}
+                          >
+                              
+                          </UserRow>)
+                      }
+          </tbody>
         </table>
       </div>
     </div>
