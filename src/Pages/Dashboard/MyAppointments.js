@@ -32,7 +32,7 @@ const MyAppointments = () => {
           setAppointments(data);
         });
     }
-  }, [user]);
+  }, [navigate, user]);
 
   return (
     <div>

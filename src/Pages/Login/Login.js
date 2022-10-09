@@ -32,7 +32,7 @@ const Login = () => {
     }
   }, [token, from, navigate]);
 
-  console.log(token)
+  
 
   if (loading || gLoading) {
     return <Loading></Loading>;
