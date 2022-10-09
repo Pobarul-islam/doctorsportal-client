@@ -19,7 +19,7 @@ const Login = () => {
   const [signInWithEmailAndPassword, user, loading, error] =
     useSignInWithEmailAndPassword(auth);
   
-  const [token] = useToken(user || user);
+  const [token] = useToken(user || gUser);
 
   let signInError;
   const navigate = useNavigate();
@@ -32,7 +32,7 @@ const Login = () => {
     }
   }, [token, from, navigate]);
 
-  console.log(user)
+  console.log(token)
 
   if (loading || gLoading) {
     return <Loading></Loading>;

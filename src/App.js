@@ -1,6 +1,5 @@
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
-
 import About from "./Pages/Home/About";
 import Home from "./Pages/Home/Home";
 import Login from "./Pages/Login/Login";
@@ -13,6 +12,8 @@ import Dashboard from "./Pages/Dashboard/Dashboard";
 import Appointment from "./Pages/Appoinment/Appointment";
 import MyAppointments from "./Pages/Dashboard/MyAppointments";
 import MyReview from "./Pages/Dashboard/MyReview";
+import Users from "./Pages/Dashboard/Users";
+import MyHistory from "./Pages/Dashboard/MyHistory";
 
 
 function App() {
@@ -38,6 +39,8 @@ function App() {
 
            <Route index element={<MyAppointments/>}></Route>
            <Route path="review" element={<MyReview/>}></Route>
+           <Route path="history" element={<MyHistory/>}></Route>
+           <Route path="users" element={<Users/>}></Route>
         </Route>
 
         <Route path="/login" element={<Login></Login>}></Route>
