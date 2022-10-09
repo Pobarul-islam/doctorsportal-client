@@ -9,6 +9,7 @@ const Users = () => {
     const {
         data: users,
         isLoading,
+        refetch
         
     
   } = useQuery("users", () =>
@@ -37,9 +38,10 @@ const Users = () => {
           </thead>
                   <tbody>
                       {
-                          users.map(user => <UserRow
+                          users.map((user)=> <UserRow
                               key={user._id}
                               user={user}
+                              refetch={refetch}
                           >
                               
                           </UserRow>)
