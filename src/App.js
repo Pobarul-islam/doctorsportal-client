@@ -14,6 +14,7 @@ import MyAppointments from "./Pages/Dashboard/MyAppointments";
 import MyReview from "./Pages/Dashboard/MyReview";
 import Users from "./Pages/Dashboard/Users";
 import MyHistory from "./Pages/Dashboard/MyHistory";
+import AddDoctor from "./Pages/Dashboard/AddDoctor";
 
 
 function App() {
@@ -45,6 +46,7 @@ function App() {
 
         <Route path="/login" element={<Login></Login>}></Route>
         <Route path="/signup" element={<SignUp></SignUp>}></Route>
+        <Route path="/addDoctor" element={<AddDoctor></AddDoctor>}></Route>
       </Routes>
       <ToastContainer />
       
